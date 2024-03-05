@@ -1,4 +1,4 @@
-public class Veiculo {
+public abstract class Veiculo {
     //Atributos
     private String marca;
     private String modelo;
@@ -58,4 +58,13 @@ public class Veiculo {
     public void setNumChassi(long numChassi) {
         this.numChassi = numChassi;
     }
+ 
+    // método locomover
+public void locomover() {
+    // System.out.println("O "+marca+" "+modelo+" está se locomovendo!");
+    // desafio faz o locomover ficar assim, responder assim: O Fiat Uno Vivace preto
+    // ano 2012 está se locomovendo!
+    System.out.println("O " + this.getMarca() + " " + this.getModelo() + " " + this.getCor() + " ano " + this.getAno() + " está se locomovendo!");
+    }
+
 }
